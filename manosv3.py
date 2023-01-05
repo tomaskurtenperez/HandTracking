@@ -78,10 +78,6 @@ while True:
                 #print(angle)
 
         mouse.move(x8,y8)
-
-        # cTime = time.time()
-        # fps = 1 / (cTime - pTime)
-        # pTime = cTime
     
         key = cv2.waitKey(1)
         if y10>y12:
