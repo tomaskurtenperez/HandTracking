@@ -84,15 +84,16 @@ while True:
         # pTime = cTime
     
         key = cv2.waitKey(1)
-        if y10>y12 and click==0:
-            mouse.click('left')
-            click=1
+        if y10>y12:
+            if click==0:
+                mouse.click('left')
+                click=1
         else:
             click=0
         if y16<y14:
             mecont=mecont+1
             if mecont>20:
-                print("ADIO")
+                print("ADIOS")
                 break
         else:
             mecont=0
